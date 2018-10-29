@@ -1,0 +1,78 @@
+body {
+    background-color:  lightpink;
+    color:black;
+    text-align: center
+}
+
+.cell {
+    width:30px; 
+    height:30px;
+    text-align: center
+}
+
+.shown {
+    background-color: lightslategrey;
+}
+/* .button {
+    padding: 10px;
+    margin: 20px; 
+    width: 100px;
+    border-style: unset;
+    background-color: aqua;
+} */
+
+.button {
+    float: down;
+    text-align: left;
+    position: left;
+    margin-top: 5px;
+}
+
+.start {
+    float: left;
+    width: 30%;
+    padding-left: 20px;
+    padding-bottom: 100px;
+}
+
+form {
+    text-align: left;
+    float: center;
+}
+
+.board {
+    border: 1px;
+}
+
+.tableHead {
+    background-color: gray;
+    text-align: center;
+    font-size: 4em;
+    height: 20px;
+} 
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+td {
+    background-color: gray;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+}
+
+table {
+    float: center;
+    border: 1px;
+    color: black;
+    align-content: center;
+    align-items: center;
+}
+
+h4 {
+    float: up;
+    text-align: left;
+}
+
