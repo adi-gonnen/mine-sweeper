@@ -1,5 +1,5 @@
 body {
-    background-color:  lightpink;
+    background-color:  #d19bb9ab;
     color:black;
     text-align: center
 }
@@ -13,35 +13,27 @@ body {
 .shown {
     background-color: lightslategrey;
 }
-/* .button {
-    padding: 10px;
-    margin: 20px; 
-    width: 100px;
-    border-style: unset;
-    background-color: aqua;
-} */
 
 .button {
-    float: down;
-    text-align: left;
-    position: left;
-    margin-top: 5px;
+    margin-left: 25px;
 }
 
 .start {
-    float: left;
-    width: 30%;
-    padding-left: 20px;
-    padding-bottom: 100px;
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
 }
 
+.form-levels {
+    display: flex;
+}
 form {
     text-align: left;
-    float: center;
 }
 
 .board {
     border: 1px;
+    margin: auto;
 }
 
 .tableHead {
@@ -64,15 +56,12 @@ td {
 }
 
 table {
-    float: center;
+    margin: auto;
     border: 1px;
     color: black;
-    align-content: center;
-    align-items: center;
 }
 
 h4 {
-    float: up;
-    text-align: left;
+    margin: 0 10px;
 }
 

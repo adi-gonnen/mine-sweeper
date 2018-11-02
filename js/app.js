@@ -2,21 +2,19 @@
 
 var CELL = null;
 var FLAG = '⛳';
-// var MINE = ;
 var SHOW = 'SHOW';
 var HIDE = 'HIDE';
 var SMILE = '<img src="img/smile.jpg">';
 var SAD = '<img src="img/sad.jpg">';
 var HAPPY = '<img src="img/happy.png">';
 var gIcon;
-var gSize = 6;
-var gMines = 5;
+var gSize = 12;
+var gMines = 30;
 var gLevels = [
 	{ id: 1, name: 'begginer', size: 4, mines: 2 },
-	{ id: 2, name: 'Medium', size: 6, mines: 5 },
-	{ id: 3, name: 'Expert', size: 8, mines: 15 }
+	{ id: 2, name: 'Medium', size: 8, mines: 15 },
+	{ id: 3, name: 'Expert', size: 12, mines: 30 }
 ]
-// var gElements = getElements();
 var gBoard = buildBoard();
 
 
@@ -47,15 +45,6 @@ function buildBoard() {
 	}
 	return board;
 }
-
-// function getElements () {
-// 	var array = [];
-// 	for (var i = 0; i < 9; i++) {
-// 		// var element = <img src="img/i.png">;
-// 		array[i] = element;
-// 	}
-// 	return array;
-// }
 
 function renderBoard(board) {
 	var strHTML = '';
@@ -184,7 +173,6 @@ function addMines(i, j) {
 			}
 		}
 		if (!isNeg && mineLocation.mine === false) {				//avoid 2 mines on same cell
-			// mineLocation.mine = true;
 			mineLocation.mine = true;
 			count++;
 			console.log('mine at: ', mineLocation.location);
