@@ -9,18 +9,26 @@
 
 <body onload="init()">
   <h1>Mine Sweeper</h1>
-  <div class="start">
-    <h4>choose your level:</h4>
-    <form class="form-levels">
-      <input type="radio" onclick="getLevel(this)" name="level" id="1" value="begginer"> begginer<br>
-      <input type="radio" onclick="getLevel(this)" name="level" id="2" value="medium"> medium<br>
-      <input type="radio" onclick="getLevel(this)" name="level" id="3" value="expert" checked> expert<br> 
-      <button type="button" class="button" onclick="startPlay()">start play</button>
-    </form>
+  <div class="body">
+    <div class="start">
+      <h4>choose your level:</h4>
+      <form class="form-levels">
+        <input type="radio" onclick="getLevel(this)" name="level" id="1" value="begginer"> begginer (5X5, 3 mines) <br>
+        <input type="radio" onclick="getLevel(this)" name="level" id="2" value="medium"> medium (8X8, 15 mines) <br>
+        <input type="radio" onclick="getLevel(this)" name="level" id="3" value="expert" checked> expert (12X12 30 mines)
+      </form>
+    </div>
+    <div class="game">
+      <div class="game-header">
+        <button type="button" class="button" onclick="startPlay()">new game</button>
+        <div class="mines-container"></div>
+        <div class="clock-container"></div>
+      </div>
+      <table>
+        <tbody class="board"></tbody>
+      </table>
+    </div>
   </div>
-  <table>
-    <tbody class="board"></tbody>
-  </table>
   <script src="js/app.js"></script>
 </body>
 

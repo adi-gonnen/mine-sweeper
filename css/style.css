@@ -1,5 +1,5 @@
 body {
-    background-color:  #d19bb9ab;
+    background-color:  #dac3a7;
     color:black;
     text-align: center
 }
@@ -15,38 +15,48 @@ body {
 }
 
 .button {
-    margin-left: 25px;
+    height: 25px;
+    cursor: pointer;
 }
 
 .start {
     display: flex;
-    margin: 20px auto;
-    justify-content: center;
+    flex-direction: column;
+    margin: 20px 30px;
 }
 
-.form-levels {
+.body {
     display: flex;
 }
+
 form {
     text-align: left;
 }
 
+.game {
+    display: flex;
+    flex-direction: column;
+    
+}
+.game-header {
+    display: flex;
+    justify-content: space-around;
+    
+}
 .board {
     border: 1px;
     margin: auto;
 }
 
-.tableHead {
-    background-color: gray;
-    text-align: center;
-    font-size: 4em;
-    height: 20px;
-} 
-
 img {
     width: 30px;
     height: 30px;
 }
+
+.table-head {
+    height: 65px;
+    background-color: gray;
+} 
 
 td {
     background-color: gray;
@@ -56,7 +66,6 @@ td {
 }
 
 table {
-    margin: auto;
     border: 1px;
     color: black;
 }
@@ -65,3 +74,12 @@ h4 {
     margin: 0 10px;
 }
 
+.mines-container, .clock-container {
+    display: flex;
+    width: 65px;
+    height: 25px;
+    border: 1px solid;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
